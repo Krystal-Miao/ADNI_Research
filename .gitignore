@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# macOS
+.DS_Store
+
+# MRI data
+data/raw_data/
+data/raw_data_test/
+data/raw_data_one_scan/
+
+data/preprocessed_test/
+data/preprocessed_one_scan/
+
+data/sample_visualizations/
+
+data/nifti_check_summary.csv
+
+# Medical image formats
+*.nii
+*.nii.gz
+*.tiff
+
+# Logs
+load_error_list.txt
