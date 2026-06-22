@@ -8,7 +8,7 @@ def get_config_dict():
 
     config = {}
 
-    config["data_path"] = project_root / "data" / "raw_data_test"
+    config["data_path"] = project_root / "data" / "raw_data_one_scan"
 
     config["re_process"] = False
 
