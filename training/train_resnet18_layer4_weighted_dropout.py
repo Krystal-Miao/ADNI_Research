@@ -10,6 +10,8 @@ from torchvision import models
 
 from dataset import ADNISliceDataset
 
+from utils import get_class_weights
+
 CSV_PATH = "data/slice_metadata_split.csv"
 
 BATCH_SIZE = 16
@@ -146,7 +148,7 @@ def main():
 
     model = model.to(device)
 
-    class_weights = torch.tensor([1.0, 151 / 97], dtype=torch.float32).to(device)
+    class_weights = get_class_weights("data/slice_metadata_split.csv", device)
 
     criterion = nn.CrossEntropyLoss(weight=class_weights)
 

@@ -27,3 +27,5 @@ data/nifti_check_summary.csv
 
 # Logs
 load_error_list.txt
+
+training/*.pt
